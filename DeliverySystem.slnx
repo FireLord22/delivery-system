@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DeliveryApi.Tests/DeliveryApi.Tests.csproj" />
+  <Project Path="DeliveryApi/DeliveryApi.csproj" />
+  <Project Path="DeliveryClient/DeliveryClient.csproj" />
+</Solution>
