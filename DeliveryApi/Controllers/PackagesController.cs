@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
 using System.Text.Json;
@@ -20,7 +20,7 @@ public class PackagesController : ControllerBase
         _redis = redis.GetDatabase();
     }
 
-    // GET /api/packages — с кэшированием
+    // GET /api/packages вЂ” СЃ РєСЌС€РёСЂРѕРІР°РЅРёРµРј
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -35,11 +35,12 @@ public class PackagesController : ControllerBase
             .Include(p => p.Route)
             .ToListAsync();
 
-        await _redis.StringSetAsync(cacheKey, JsonSerializer.Serialize(packages), TimeSpan.FromMinutes(5));
+        var opts = new JsonSerializerOptions { ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles };
+        await _redis.StringSetAsync(cacheKey, JsonSerializer.Serialize(packages, opts), TimeSpan.FromMinutes(5));
         return Ok(packages);
     }
 
-    // GET /api/packages/{id} — с кэшированием
+    // GET /api/packages/{id} вЂ” СЃ РєСЌС€РёСЂРѕРІР°РЅРёРµРј
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
@@ -56,7 +57,8 @@ public class PackagesController : ControllerBase
 
         if (package == null) return NotFound();
 
-        await _redis.StringSetAsync(cacheKey, JsonSerializer.Serialize(package), TimeSpan.FromMinutes(5));
+        var opts2 = new JsonSerializerOptions { ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles };
+        await _redis.StringSetAsync(cacheKey, JsonSerializer.Serialize(package, opts2), TimeSpan.FromMinutes(5));
         return Ok(package);
     }
 
@@ -65,7 +67,7 @@ public class PackagesController : ControllerBase
     {
         _db.Packages.Add(package);
         await _db.SaveChangesAsync();
-        // Инвалидация кэша
+        // РРЅРІР°Р»РёРґР°С†РёСЏ РєСЌС€Р°
         await _redis.KeyDeleteAsync("packages:all");
         return CreatedAtAction(nameof(GetById), new { id = package.Id }, package);
     }
@@ -82,7 +84,7 @@ public class PackagesController : ControllerBase
         existing.RouteId = updated.RouteId;
         await _db.SaveChangesAsync();
 
-        // Инвалидация кэша
+        // РРЅРІР°Р»РёРґР°С†РёСЏ РєСЌС€Р°
         await _redis.KeyDeleteAsync("packages:all");
         await _redis.KeyDeleteAsync($"packages:{id}");
         return NoContent();

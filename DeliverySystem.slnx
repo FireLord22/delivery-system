@@ -2,4 +2,5 @@
   <Project Path="DeliveryApi.Tests/DeliveryApi.Tests.csproj" />
   <Project Path="DeliveryApi/DeliveryApi.csproj" />
   <Project Path="DeliveryClient/DeliveryClient.csproj" />
+  <Project Path="DeliveryDesktop/DeliveryDesktop.csproj" />
 </Solution>

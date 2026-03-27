@@ -39,7 +39,7 @@ delegate void OnRequestCompleted(string endpoint, int statusCode, long elapsedMs
 
 class ApiService
 {
-    private readonly HttpClient _http = new() { BaseAddress = new Uri("http://localhost/api/") };
+    private readonly HttpClient _http = new() { BaseAddress = new Uri("http://localhost:8080/api/") };
     public event OnRequestCompleted? RequestCompleted;
     public Func<int, Task<string?>> GetById => async (id) => {
         var sw = Stopwatch.StartNew();

@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\erikr\\delivery-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|c:\\users\\erikr\\delivery-system\\deliveryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|solutionrelative:deliveryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|c:\\users\\erikr\\delivery-system\\deliveryapi\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|solutionrelative:deliveryapi\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\views\\userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\views\\userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|c:\\users\\erikr\\delivery-system\\deliveryapi\\controllers\\packagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|solutionrelative:deliveryapi\\controllers\\packagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\views\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\views\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|c:\\users\\erikr\\delivery-system\\deliveryapi\\controllers\\routescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|solutionrelative:deliveryapi\\controllers\\routescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\views\\loginwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\views\\loginwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|c:\\users\\erikr\\delivery-system\\deliveryapi\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|solutionrelative:deliveryapi\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\views\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\views\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|c:\\users\\erikr\\delivery-system\\deliveryapi\\controllers\\courierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D8B35F-0C62-31CD-7EC4-830F4EC49D36}|DeliveryApi\\DeliveryApi.csproj|solutionrelative:deliveryapi\\controllers\\courierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\views\\userwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\views\\userwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\views\\adminwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\views\\adminwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|c:\\users\\erikr\\delivery-system\\deliverydesktop\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DAD89DB-3039-2594-190C-BABA401EFE02}|DeliveryDesktop\\DeliveryDesktop.csproj|solutionrelative:deliverydesktop\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +42,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Data\\AppDbContextFactory.cs",
-              "RelativeDocumentMoniker": "DeliveryApi\\Data\\AppDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Data\\AppDbContextFactory.cs",
-              "RelativeToolTip": "DeliveryApi\\Data\\AppDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Services\\ApiService.cs",
+              "RelativeToolTip": "DeliveryDesktop\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T13:27:23.403Z",
+              "WhenOpened": "2026-03-26T20:36:45.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PackagesController.cs",
-              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\PackagesController.cs",
-              "RelativeDocumentMoniker": "DeliveryApi\\Controllers\\PackagesController.cs",
-              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\PackagesController.cs",
-              "RelativeToolTip": "DeliveryApi\\Controllers\\PackagesController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T05:53:07.537Z"
+              "DocumentIndex": 4,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "RelativeToolTip": "DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-26T20:24:14.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Program.cs",
-              "RelativeDocumentMoniker": "DeliveryApi\\Program.cs",
-              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Program.cs",
-              "RelativeToolTip": "DeliveryApi\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T05:50:37.753Z",
+              "DocumentIndex": 5,
+              "Title": "UserWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\UserWindow.xaml",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Views\\UserWindow.xaml",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\UserWindow.xaml",
+              "RelativeToolTip": "DeliveryDesktop\\Views\\UserWindow.xaml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-26T20:23:49.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RoutesController.cs",
-              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\RoutesController.cs",
-              "RelativeDocumentMoniker": "DeliveryApi\\Controllers\\RoutesController.cs",
-              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\RoutesController.cs",
-              "RelativeToolTip": "DeliveryApi\\Controllers\\RoutesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T05:50:19.108Z"
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Views\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\LoginWindow.xaml",
+              "RelativeToolTip": "DeliveryDesktop\\Views\\LoginWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-26T15:02:48.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CouriersController.cs",
-              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\CouriersController.cs",
-              "RelativeDocumentMoniker": "DeliveryApi\\Controllers\\CouriersController.cs",
-              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\CouriersController.cs",
-              "RelativeToolTip": "DeliveryApi\\Controllers\\CouriersController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwDgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T05:50:00.998Z"
+              "DocumentIndex": 6,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "RelativeToolTip": "DeliveryDesktop\\Views\\AdminWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-26T15:02:41.58Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "DeliveryApi\\Controllers\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryApi\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "DeliveryApi\\Controllers\\ClientsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Views\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "DeliveryDesktop\\Views\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T05:49:38.081Z"
+              "WhenOpened": "2026-03-26T15:02:17.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\UserWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Views\\UserWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\UserWindow.xaml.cs",
+              "RelativeToolTip": "DeliveryDesktop\\Views\\UserWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T15:00:02.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DeliveryDesktop\\Views\\AdminWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\erikr\\delivery-system\\DeliveryDesktop\\Views\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "DeliveryDesktop\\Views\\AdminWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T14:59:59.945Z",
+              "EditorCaption": ""
             }
           ]
         }

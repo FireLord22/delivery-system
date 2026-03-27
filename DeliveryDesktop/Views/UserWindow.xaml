@@ -1,0 +1,58 @@
+<Window x:Class="DeliveryDesktop.Views.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Служба доставки — Пользователь" Height="600" Width="850"
+        WindowStartupLocation="CenterScreen">
+  <DockPanel>
+    <Border DockPanel.Dock="Top" Background="#3C6E71" Padding="12,8">
+      <TextBlock Text="Служба доставки — Просмотр посылок"
+                 FontSize="15" FontWeight="Bold" Foreground="White"/>
+    </Border>
+
+    <Border DockPanel.Dock="Bottom" Background="#F0F0F0"
+            BorderBrush="#CCCCCC" BorderThickness="0,1,0,0" Padding="8,5">
+      <TextBlock x:Name="LogText" FontSize="11"
+                 Foreground="#555555" FontFamily="Consolas"/>
+    </Border>
+
+    <Border DockPanel.Dock="Top" Padding="12,10"
+            BorderBrush="#CCCCCC" BorderThickness="0,0,0,1">
+      <StackPanel>
+        <TextBlock Text="Создать новую посылку:"
+                   FontWeight="Bold" Margin="0,0,0,8"/>
+        <WrapPanel>
+          <StackPanel Margin="0,0,10,0">
+            <TextBlock Text="Трек-номер" FontSize="11" Margin="0,0,0,3"/>
+            <TextBox x:Name="TrackingBox" Width="120" Height="26" Padding="4,3"/>
+          </StackPanel>
+          <StackPanel Margin="0,0,10,0">
+            <TextBlock Text="Вес (кг)" FontSize="11" Margin="0,0,0,3"/>
+            <TextBox x:Name="WeightBox" Width="80" Height="26" Padding="4,3"/>
+          </StackPanel>
+          <StackPanel Margin="0,0,10,0">
+            <TextBlock Text="ID клиента" FontSize="11" Margin="0,0,0,3"/>
+            <TextBox x:Name="ClientIdBox" Width="80" Height="26" Padding="4,3"/>
+          </StackPanel>
+          <Button Content="Создать" Height="26" Padding="12,0"
+                  VerticalAlignment="Bottom" Click="CreatePackage_Click"/>
+        </WrapPanel>
+      </StackPanel>
+    </Border>
+
+    <DataGrid x:Name="PackagesGrid" Margin="10"
+              AutoGenerateColumns="False" IsReadOnly="True"
+              GridLinesVisibility="Horizontal"
+              HeadersVisibility="Column"
+              RowHeaderWidth="0">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="45"/>
+        <DataGridTextColumn Header="Трек-номер" Binding="{Binding TrackingNumber}" Width="120"/>
+        <DataGridTextColumn Header="Вес (кг)" Binding="{Binding WeightKg}" Width="75"/>
+        <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="100"/>
+        <DataGridTextColumn Header="Клиент" Binding="{Binding Client.FullName}" Width="*"/>
+        <DataGridTextColumn Header="Курьер" Binding="{Binding Courier.FullName}" Width="*"/>
+        <DataGridTextColumn Header="Маршрут" Binding="{Binding Route.Name}" Width="*"/>
+      </DataGrid.Columns>
+    </DataGrid>
+  </DockPanel>
+</Window>
