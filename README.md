@@ -1,4 +1,4 @@
-<img width="735" height="671" alt="image" src="https://github.com/user-attachments/assets/f565ccce-a9cb-432c-b8e2-a0a3d34fcb2a" />DeliverySystem — production-ready серверная система на основе ASP.NET Core Web API с поддержкой контейнеризации, кэширования, мониторинга и CI/CD. В комплекте — графическое WPF-приложение для работы с данными через REST API с разграничением ролей пользователя и администратора.
+DeliverySystem — production-ready серверная система на основе ASP.NET Core Web API с поддержкой контейнеризации, кэширования, мониторинга и CI/CD. В комплекте — графическое WPF-приложение для работы с данными через REST API с разграничением ролей пользователя и администратора.
 Цель лабораторной работы - разработать и развернуть полноценную серверную систему с использованием современного стека технологий, включающего контейнеризацию, реляционную базу данных, кэширование, мониторинг и автоматизацию сборки, а также разработать графическое клиентское приложение на C# с применением делегатов и событий.
 
 Задачи
@@ -13,3 +13,21 @@
 
 Технологический стек
 <img width="735" height="671" alt="image" src="https://github.com/user-attachments/assets/c7c911cf-2e17-4c51-817c-57d224385010" />
+
+Структура проекта
+<img width="434" height="710" alt="image" src="https://github.com/user-attachments/assets/06d02b19-519e-4ddb-9bab-116acc6002b3" />
+
+Требования
+  Docker Desktop
+  .NET SDK 8.0 (для запуска WPF-клиента)
+
+Swagger UI http://localhost/swagger
+Grafana http://localhost:3000
+Prometheus http://localhost:9090
+Метрики API http://localhost:8080/metrics
+
+user user123 Просмотр и создание посылок
+admin admin123 Полный доступ
+
+Рубцов Э.Д.
+ТвГТУ — Б.ИВТ.ПРОМ.23.01
