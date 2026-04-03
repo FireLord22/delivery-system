@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Media;
 using DeliveryDesktop.Models;
 using DeliveryDesktop.Services;
 
@@ -8,17 +9,20 @@ public partial class UserWindow : Window
 {
     private readonly ApiService _api;
 
+    private static readonly Dictionary<string, string> StatusTranslations = new()
+    {
+        { "Pending", "Ожидает" },
+        { "InTransit", "В пути" },
+        { "Delivered", "Доставлено" }
+    };
+
     public UserWindow(ApiService api)
     {
         InitializeComponent();
         _api = api;
-
-        // Подписываем обработчики делегата
         _api.RequestCompleted += LogToStatus;
         _api.RequestCompleted += (endpoint, statusCode, elapsedMs) =>
-     _api.Log($"{endpoint} | {statusCode} | {elapsedMs}мс");
-
-        Loaded += async (_, _) => await LoadPackages();
+            _api.Log($"{endpoint} | {statusCode} | {elapsedMs}мс");
     }
 
     private void LogToStatus(string endpoint, int statusCode, long elapsedMs)
@@ -27,17 +31,49 @@ public partial class UserWindow : Window
             LogText.Text = $"[{DateTime.Now:HH:mm:ss}] {endpoint} → HTTP {statusCode} ({elapsedMs} мс)");
     }
 
-    private async Task LoadPackages()
+    private async void SearchPackage_Click(object sender, RoutedEventArgs e)
     {
-        try
+        var trackingNumber = SearchBox.Text.Trim();
+        if (string.IsNullOrEmpty(trackingNumber))
         {
-            var packages = await _api.GetAllPackages();
-            PackagesGrid.ItemsSource = packages;
+            MessageBox.Show("Введите трек-номер для поиска");
+            return;
         }
-        catch (Exception ex)
+
+        // Ищем среди всех посылок
+        var packages = await _api.GetAllPackages();
+        var package = packages.FirstOrDefault(p =>
+            p.TrackingNumber.Equals(trackingNumber, StringComparison.OrdinalIgnoreCase));
+
+        if (package == null)
         {
-            MessageBox.Show($"Тип: {ex.GetType().Name}\n\nСообщение: {ex.Message}\n\nВнутренняя: {ex.InnerException?.Message}", "Ошибка");
+            SearchResultTitle.Text = $"Посылка с трек-номером «{trackingNumber}» не найдена";
+            SearchResultTitle.Foreground = Brushes.Red;
+            PackageInfoGrid.Visibility = System.Windows.Visibility.Collapsed;
+            return;
         }
+
+        // Показываем информацию
+        SearchResultTitle.Text = $"Информация о посылке:";
+        SearchResultTitle.Foreground = Brushes.Black;
+        PackageInfoGrid.Visibility = System.Windows.Visibility.Visible;
+
+        InfoTracking.Text = package.TrackingNumber;
+        InfoWeight.Text = $"{package.WeightKg} кг";
+        InfoClient.Text = package.Client?.FullName ?? $"ID {package.ClientId}";
+        InfoCourier.Text = package.Courier?.FullName ?? $"ID {package.CourierId}";
+        InfoRoute.Text = package.Route?.Name ?? $"ID {package.RouteId}";
+
+        // Статус с цветом
+        var statusRu = StatusTranslations.TryGetValue(package.Status, out var translated)
+            ? translated : package.Status;
+        InfoStatus.Text = statusRu;
+        InfoStatus.Foreground = package.Status switch
+        {
+            "Delivered" => Brushes.Green,
+            "InTransit" => Brushes.Blue,
+            _ => Brushes.Orange
+        };
     }
 
     private async void CreatePackage_Click(object sender, RoutedEventArgs e)
@@ -49,9 +85,12 @@ public partial class UserWindow : Window
             return;
         }
 
+        // Генерируем трек-номер автоматически
+        var trackingNumber = $"TRK-{DateTime.Now:yyyyMMdd-HHmmss}";
+
         var package = new Package
         {
-            TrackingNumber = TrackingBox.Text,
+            TrackingNumber = trackingNumber,
             WeightKg = weight,
             Status = "Pending",
             ClientId = clientId,
@@ -62,10 +101,10 @@ public partial class UserWindow : Window
         var ok = await _api.CreatePackage(package);
         if (ok)
         {
-            TrackingBox.Clear();
             WeightBox.Clear();
             ClientIdBox.Clear();
-            await LoadPackages();
+            MessageBox.Show($"Посылка создана!\nТрек-номер: {trackingNumber}",
+                "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
         }
         else
         {

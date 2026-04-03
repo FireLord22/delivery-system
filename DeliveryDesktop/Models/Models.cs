@@ -2,6 +2,13 @@
 
 public class Package
 {
+    public string StatusRu => Status switch
+    {
+        "Pending" => "Ожидает",
+        "InTransit" => "В пути",
+        "Delivered" => "Доставлено",
+        _ => Status
+    };
     public int Id { get; set; }
     public string TrackingNumber { get; set; } = string.Empty;
     public double WeightKg { get; set; }

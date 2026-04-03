@@ -129,4 +129,61 @@ public class ApiService
         var json = await resp.Content.ReadAsStringAsync();
         return JsonSerializer.Deserialize<List<Route>>(json, _jsonOptions) ?? new();
     }
+
+    // Clients
+    public async Task<bool> CreateClient(Client client)
+    {
+        var sw = Stopwatch.StartNew();
+        var resp = await _http.PostAsJsonAsync("clients", client);
+        sw.Stop();
+        RequestCompleted?.Invoke("POST /clients", (int)resp.StatusCode, sw.ElapsedMilliseconds);
+        return resp.IsSuccessStatusCode;
+    }
+
+    public async Task<bool> DeleteClient(int id)
+    {
+        var sw = Stopwatch.StartNew();
+        var resp = await _http.DeleteAsync($"clients/{id}");
+        sw.Stop();
+        RequestCompleted?.Invoke($"DELETE /clients/{id}", (int)resp.StatusCode, sw.ElapsedMilliseconds);
+        return resp.IsSuccessStatusCode;
+    }
+
+    // Couriers
+    public async Task<bool> CreateCourier(Courier courier)
+    {
+        var sw = Stopwatch.StartNew();
+        var resp = await _http.PostAsJsonAsync("couriers", courier);
+        sw.Stop();
+        RequestCompleted?.Invoke("POST /couriers", (int)resp.StatusCode, sw.ElapsedMilliseconds);
+        return resp.IsSuccessStatusCode;
+    }
+
+    public async Task<bool> DeleteCourier(int id)
+    {
+        var sw = Stopwatch.StartNew();
+        var resp = await _http.DeleteAsync($"couriers/{id}");
+        sw.Stop();
+        RequestCompleted?.Invoke($"DELETE /couriers/{id}", (int)resp.StatusCode, sw.ElapsedMilliseconds);
+        return resp.IsSuccessStatusCode;
+    }
+
+    // Routes
+    public async Task<bool> CreateRoute(Route route)
+    {
+        var sw = Stopwatch.StartNew();
+        var resp = await _http.PostAsJsonAsync("routes", route);
+        sw.Stop();
+        RequestCompleted?.Invoke("POST /routes", (int)resp.StatusCode, sw.ElapsedMilliseconds);
+        return resp.IsSuccessStatusCode;
+    }
+
+    public async Task<bool> DeleteRoute(int id)
+    {
+        var sw = Stopwatch.StartNew();
+        var resp = await _http.DeleteAsync($"routes/{id}");
+        sw.Stop();
+        RequestCompleted?.Invoke($"DELETE /routes/{id}", (int)resp.StatusCode, sw.ElapsedMilliseconds);
+        return resp.IsSuccessStatusCode;
+    }
 }
